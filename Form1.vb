@@ -72,7 +72,7 @@
         metersh.Text = ""
         feeth.Text = ""
         loskm.Text = ""
-        losnmi.Text = ""
+        losmi.Text = ""
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
@@ -80,7 +80,7 @@
 
         heightft = Convert.ToDouble(feeth.Text)
 
-        losnmi.Text = Convert.ToString(Math.Sqrt(heightft) * 1.23)
+        losmi.Text = Convert.ToString(Math.Sqrt(heightft) * 1.23)
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
@@ -105,33 +105,36 @@
 
         kmc = Convert.ToDouble(kmcv.Text)
 
-        nmicv.Text = Convert.ToString(kmc * 1.852)
+        micv.Text = Convert.ToString(kmc * 1.609)
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
-        Dim nmic As Double
+        Dim mic As Double
 
-        nmic = Convert.ToDouble(nmicv.Text)
+        mic = Convert.ToDouble(micv.Text)
 
-        kmcv.Text = Convert.ToString(nmic / 1.852)
+        kmcv.Text = Convert.ToString(mic / 1.609)
     End Sub
 
     Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
         Dim inputp As Double
         Dim antgn As Double
+        Dim cablel As Double
 
         inputp = Convert.ToDouble(inputpwr.Text)
         antgn = Convert.ToDouble(antgain.Text)
+        cablel = Convert.ToDouble(cableloss.Text)
 
-        Dim erp As Double = (inputp * Math.Pow(10, (antgn / 10)) - 2.15)
-        Dim eirp As Double = (erp + 2.15)
-        Dim erpdw As Double = (10 * Math.Log10(erp))
-        Dim eirpdw As Double = (10 * Math.Log10(eirp))
+        Dim eirpdw As Double = (10 * Math.Log10(inputp) + antgn - cablel + 30)
+        Dim erpdw As Double = (10 * Math.Log10(inputp) + antgn - cablel - 2.15 + 30)
+        Dim eirp As Double = (Math.Pow(10, ((eirpdw - 30) / 10)))
+        Dim erp As Double = (Math.Pow(10, ((erpdw - 30) / 10)))
+
 
         erpw.Text = Convert.ToString(erp)
-        erpdbw.Text = Convert.ToString(erpdw)
+        erpdbm.Text = Convert.ToString(erpdw)
         eirpw.Text = Convert.ToString(eirp)
-        eirpdbw.Text = Convert.ToString(eirpdw)
+        eirpdbm.Text = Convert.ToString(eirpdw)
     End Sub
 
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
@@ -139,34 +142,35 @@
 
         wattscv = Convert.ToDouble(wattss.Text)
 
-        Dim dbwcvt As Double = (10 * Math.Log10(wattscv))
+        Dim dbwcvt As Double = (10 * Math.Log10(wattscv) + 30)
 
 
-        dbws.Text = Convert.ToString(dbwcvt)
+        dbms.Text = Convert.ToString(dbwcvt)
 
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
-        Dim dbwcv As Double
+        Dim dbmcv As Double
 
-        dbwcv = Convert.ToDouble(dbws.Text)
+        dbmcv = Convert.ToDouble(dbms.Text)
 
-        Dim wattscvt As Double = (Math.Pow(10, (dbwcv / 10)))
+        Dim wattscvt As Double = (Math.Pow(10, ((dbmcv - 30) / 10)))
 
         wattss.Text = Convert.ToString(wattscvt)
     End Sub
 
     Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
         wattss.Text = ""
-        dbws.Text = ""
+        dbms.Text = ""
     End Sub
 
     Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
         inputpwr.Text = ""
         antgain.Text = ""
         erpw.Text = ""
-        erpdbw.Text = ""
+        erpdbm.Text = ""
         eirpw.Text = ""
-        eirpdbw.Text = ""
+        eirpdbm.Text = ""
     End Sub
+
 End Class

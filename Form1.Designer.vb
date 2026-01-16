@@ -52,7 +52,7 @@ Partial Class Form1
         Label14 = New Label()
         Label13 = New Label()
         Label12 = New Label()
-        losnmi = New TextBox()
+        losmi = New TextBox()
         loskm = New TextBox()
         Label11 = New Label()
         Button11 = New Button()
@@ -71,7 +71,7 @@ Partial Class Form1
         Label23 = New Label()
         Label22 = New Label()
         Label21 = New Label()
-        nmicv = New TextBox()
+        micv = New TextBox()
         Label20 = New Label()
         kmcv = New TextBox()
         Label19 = New Label()
@@ -82,17 +82,20 @@ Partial Class Form1
         mcv = New TextBox()
         Label15 = New Label()
         TabPage5 = New TabPage()
+        Label40 = New Label()
+        cableloss = New TextBox()
+        Label41 = New Label()
         Button22 = New Button()
         PictureBox4 = New PictureBox()
         Label36 = New Label()
         Label35 = New Label()
         Label34 = New Label()
-        eirpdbw = New TextBox()
+        eirpdbm = New TextBox()
         eirpw = New TextBox()
         Label33 = New Label()
         Button18 = New Button()
         Label32 = New Label()
-        erpdbw = New TextBox()
+        erpdbm = New TextBox()
         Label31 = New Label()
         Label30 = New Label()
         erpw = New TextBox()
@@ -107,7 +110,7 @@ Partial Class Form1
         Button21 = New Button()
         Button20 = New Button()
         Button19 = New Button()
-        dbws = New TextBox()
+        dbms = New TextBox()
         wattss = New TextBox()
         Label39 = New Label()
         Label38 = New Label()
@@ -369,7 +372,7 @@ Partial Class Form1
         TabPage3.Controls.Add(Label14)
         TabPage3.Controls.Add(Label13)
         TabPage3.Controls.Add(Label12)
-        TabPage3.Controls.Add(losnmi)
+        TabPage3.Controls.Add(losmi)
         TabPage3.Controls.Add(loskm)
         TabPage3.Controls.Add(Label11)
         TabPage3.Controls.Add(Button11)
@@ -392,7 +395,7 @@ Partial Class Form1
         Button13.Name = "Button13"
         Button13.Size = New Size(142, 58)
         Button13.TabIndex = 15
-        Button13.Text = "Calculate LoS (NMI)"
+        Button13.Text = "Calculate LoS (MI)"
         Button13.UseVisualStyleBackColor = True
         ' 
         ' Button12
@@ -409,9 +412,9 @@ Partial Class Form1
         Label14.AutoSize = True
         Label14.Location = New Point(533, 215)
         Label14.Name = "Label14"
-        Label14.Size = New Size(306, 40)
+        Label14.Size = New Size(248, 40)
         Label14.TabIndex = 13
-        Label14.Text = "KM - Kilometer (1000 meters)" & vbCrLf & "NMI - Nautical Mile (approximately 1,85 KM)"
+        Label14.Text = "KM - Kilometer (1000 meters)" & vbCrLf & "MI -  Mile (approximately 1,609 KM)"
         ' 
         ' Label13
         ' 
@@ -419,9 +422,9 @@ Partial Class Form1
         Label13.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label13.Location = New Point(473, 174)
         Label13.Name = "Label13"
-        Label13.Size = New Size(43, 23)
+        Label13.Size = New Size(30, 23)
         Label13.TabIndex = 12
-        Label13.Text = "NMI"
+        Label13.Text = "MI"
         ' 
         ' Label12
         ' 
@@ -433,12 +436,12 @@ Partial Class Form1
         Label12.TabIndex = 11
         Label12.Text = "KM"
         ' 
-        ' losnmi
+        ' losmi
         ' 
-        losnmi.Location = New Point(320, 173)
-        losnmi.Name = "losnmi"
-        losnmi.Size = New Size(147, 27)
-        losnmi.TabIndex = 10
+        losmi.Location = New Point(320, 173)
+        losmi.Name = "losmi"
+        losmi.Size = New Size(147, 27)
+        losmi.TabIndex = 10
         ' 
         ' loskm
         ' 
@@ -531,7 +534,7 @@ Partial Class Form1
         TabPage4.Controls.Add(Label23)
         TabPage4.Controls.Add(Label22)
         TabPage4.Controls.Add(Label21)
-        TabPage4.Controls.Add(nmicv)
+        TabPage4.Controls.Add(micv)
         TabPage4.Controls.Add(Label20)
         TabPage4.Controls.Add(kmcv)
         TabPage4.Controls.Add(Label19)
@@ -563,7 +566,7 @@ Partial Class Form1
         Button16.Name = "Button16"
         Button16.Size = New Size(147, 32)
         Button16.TabIndex = 21
-        Button16.Text = "Convert to nmi"
+        Button16.Text = "Convert to mi"
         Button16.UseVisualStyleBackColor = True
         ' 
         ' Button15
@@ -590,9 +593,9 @@ Partial Class Form1
         Label24.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label24.Location = New Point(625, 243)
         Label24.Name = "Label24"
-        Label24.Size = New Size(39, 23)
+        Label24.Size = New Size(29, 23)
         Label24.TabIndex = 18
-        Label24.Text = "nmi"
+        Label24.Text = "mi"
         ' 
         ' Label23
         ' 
@@ -624,12 +627,12 @@ Partial Class Form1
         Label21.TabIndex = 15
         Label21.Text = "m"
         ' 
-        ' nmicv
+        ' micv
         ' 
-        nmicv.Location = New Point(472, 240)
-        nmicv.Name = "nmicv"
-        nmicv.Size = New Size(147, 27)
-        nmicv.TabIndex = 14
+        micv.Location = New Point(472, 240)
+        micv.Name = "micv"
+        micv.Size = New Size(147, 27)
+        micv.TabIndex = 14
         ' 
         ' Label20
         ' 
@@ -637,9 +640,9 @@ Partial Class Form1
         Label20.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label20.Location = New Point(325, 244)
         Label20.Name = "Label20"
-        Label20.Size = New Size(141, 23)
+        Label20.Size = New Size(73, 23)
         Label20.TabIndex = 13
-        Label20.Text = "In Nautical Miles:"
+        Label20.Text = "In Miles:"
         ' 
         ' kmcv
         ' 
@@ -664,9 +667,9 @@ Partial Class Form1
         Label18.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label18.Location = New Point(19, 183)
         Label18.Name = "Label18"
-        Label18.Size = New Size(282, 28)
+        Label18.Size = New Size(197, 28)
         Label18.TabIndex = 10
-        Label18.Text = "Kilometres <--> Nautical Miles"
+        Label18.Text = "Kilometres <-> Miles"
         ' 
         ' ftcv
         ' 
@@ -708,24 +711,27 @@ Partial Class Form1
         Label15.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label15.Location = New Point(58, 32)
         Label15.Name = "Label15"
-        Label15.Size = New Size(163, 28)
+        Label15.Size = New Size(155, 28)
         Label15.TabIndex = 2
-        Label15.Text = "Meters <--> Feet"
+        Label15.Text = "Meters <-> Feet"
         ' 
         ' TabPage5
         ' 
         TabPage5.BackColor = SystemColors.ControlLight
+        TabPage5.Controls.Add(Label40)
+        TabPage5.Controls.Add(cableloss)
+        TabPage5.Controls.Add(Label41)
         TabPage5.Controls.Add(Button22)
         TabPage5.Controls.Add(PictureBox4)
         TabPage5.Controls.Add(Label36)
         TabPage5.Controls.Add(Label35)
         TabPage5.Controls.Add(Label34)
-        TabPage5.Controls.Add(eirpdbw)
+        TabPage5.Controls.Add(eirpdbm)
         TabPage5.Controls.Add(eirpw)
         TabPage5.Controls.Add(Label33)
         TabPage5.Controls.Add(Button18)
         TabPage5.Controls.Add(Label32)
-        TabPage5.Controls.Add(erpdbw)
+        TabPage5.Controls.Add(erpdbm)
         TabPage5.Controls.Add(Label31)
         TabPage5.Controls.Add(Label30)
         TabPage5.Controls.Add(erpw)
@@ -742,6 +748,34 @@ Partial Class Form1
         TabPage5.Size = New Size(908, 378)
         TabPage5.TabIndex = 4
         TabPage5.Text = "ERP/EIRP"
+        ' 
+        ' Label40
+        ' 
+        Label40.AutoSize = True
+        Label40.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label40.Location = New Point(538, 72)
+        Label40.Name = "Label40"
+        Label40.Size = New Size(30, 23)
+        Label40.TabIndex = 26
+        Label40.Text = "dB"
+        ' 
+        ' cableloss
+        ' 
+        cableloss.Location = New Point(407, 72)
+        cableloss.Name = "cableloss"
+        cableloss.Size = New Size(125, 27)
+        cableloss.TabIndex = 25
+        cableloss.Text = "0,3"
+        ' 
+        ' Label41
+        ' 
+        Label41.AutoSize = True
+        Label41.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label41.Location = New Point(313, 76)
+        Label41.Name = "Label41"
+        Label41.Size = New Size(94, 23)
+        Label41.TabIndex = 24
+        Label41.Text = "Cable Loss:"
         ' 
         ' Button22
         ' 
@@ -766,42 +800,42 @@ Partial Class Form1
         ' Label36
         ' 
         Label36.AutoSize = True
-        Label36.Location = New Point(653, 294)
+        Label36.Location = New Point(645, 284)
         Label36.Name = "Label36"
-        Label36.Size = New Size(249, 60)
+        Label36.Size = New Size(257, 80)
         Label36.TabIndex = 21
-        Label36.Text = "                    Antenna gain:" & vbCrLf & "- Halfwave Dipole Antenna: 2,15 dbi" & vbCrLf & "- Isotropic Antenna: 0 dbi" & vbCrLf
+        Label36.Text = "                    Antenna gain:" & vbCrLf & "- Halfwave Dipole Antenna: 2,15 dbi" & vbCrLf & "- Isotropic Antenna: 0 dbi" & vbCrLf & "- Double stacked 1/2 Dipole: 5,15 dBi"
         ' 
         ' Label35
         ' 
         Label35.AutoSize = True
         Label35.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label35.Location = New Point(541, 242)
+        Label35.Location = New Point(538, 270)
         Label35.Name = "Label35"
-        Label35.Size = New Size(46, 23)
+        Label35.Size = New Size(45, 23)
         Label35.TabIndex = 20
-        Label35.Text = "dBW"
+        Label35.Text = "dBm"
         ' 
         ' Label34
         ' 
         Label34.AutoSize = True
         Label34.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label34.Location = New Point(541, 203)
+        Label34.Location = New Point(538, 227)
         Label34.Name = "Label34"
         Label34.Size = New Size(26, 23)
         Label34.TabIndex = 19
         Label34.Text = "W"
         ' 
-        ' eirpdbw
+        ' eirpdbm
         ' 
-        eirpdbw.Location = New Point(410, 240)
-        eirpdbw.Name = "eirpdbw"
-        eirpdbw.Size = New Size(125, 27)
-        eirpdbw.TabIndex = 18
+        eirpdbm.Location = New Point(407, 268)
+        eirpdbm.Name = "eirpdbm"
+        eirpdbm.Size = New Size(125, 27)
+        eirpdbm.TabIndex = 18
         ' 
         ' eirpw
         ' 
-        eirpw.Location = New Point(410, 199)
+        eirpw.Location = New Point(407, 227)
         eirpw.Name = "eirpw"
         eirpw.Size = New Size(125, 27)
         eirpw.TabIndex = 17
@@ -810,7 +844,7 @@ Partial Class Form1
         ' 
         Label33.AutoSize = True
         Label33.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label33.Location = New Point(410, 153)
+        Label33.Location = New Point(407, 181)
         Label33.Name = "Label33"
         Label33.Size = New Size(147, 28)
         Label33.TabIndex = 16
@@ -829,24 +863,24 @@ Partial Class Form1
         ' 
         Label32.AutoSize = True
         Label32.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label32.Location = New Point(264, 241)
+        Label32.Location = New Point(267, 270)
         Label32.Name = "Label32"
-        Label32.Size = New Size(46, 23)
+        Label32.Size = New Size(45, 23)
         Label32.TabIndex = 14
-        Label32.Text = "dBW"
+        Label32.Text = "dBm"
         ' 
-        ' erpdbw
+        ' erpdbm
         ' 
-        erpdbw.Location = New Point(133, 241)
-        erpdbw.Name = "erpdbw"
-        erpdbw.Size = New Size(125, 27)
-        erpdbw.TabIndex = 13
+        erpdbm.Location = New Point(136, 269)
+        erpdbm.Name = "erpdbm"
+        erpdbm.Size = New Size(125, 27)
+        erpdbm.TabIndex = 13
         ' 
         ' Label31
         ' 
         Label31.AutoSize = True
         Label31.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label31.Location = New Point(264, 199)
+        Label31.Location = New Point(267, 228)
         Label31.Name = "Label31"
         Label31.Size = New Size(26, 23)
         Label31.TabIndex = 12
@@ -856,7 +890,7 @@ Partial Class Form1
         ' 
         Label30.AutoSize = True
         Label30.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label30.Location = New Point(264, 125)
+        Label30.Location = New Point(268, 128)
         Label30.Name = "Label30"
         Label30.Size = New Size(34, 23)
         Label30.TabIndex = 11
@@ -864,23 +898,24 @@ Partial Class Form1
         ' 
         ' erpw
         ' 
-        erpw.Location = New Point(133, 199)
+        erpw.Location = New Point(136, 227)
         erpw.Name = "erpw"
         erpw.Size = New Size(125, 27)
         erpw.TabIndex = 10
         ' 
         ' antgain
         ' 
-        antgain.Location = New Point(132, 124)
+        antgain.Location = New Point(136, 127)
         antgain.Name = "antgain"
         antgain.Size = New Size(125, 27)
         antgain.TabIndex = 9
+        antgain.Text = "2,15"
         ' 
         ' Label29
         ' 
         Label29.AutoSize = True
         Label29.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label29.Location = New Point(264, 73)
+        Label29.Location = New Point(267, 77)
         Label29.Name = "Label29"
         Label29.Size = New Size(26, 23)
         Label29.TabIndex = 8
@@ -890,7 +925,7 @@ Partial Class Form1
         ' 
         Label28.AutoSize = True
         Label28.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label28.Location = New Point(3, 199)
+        Label28.Location = New Point(10, 228)
         Label28.Name = "Label28"
         Label28.Size = New Size(120, 23)
         Label28.TabIndex = 7
@@ -900,7 +935,7 @@ Partial Class Form1
         ' 
         Label27.AutoSize = True
         Label27.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label27.Location = New Point(8, 128)
+        Label27.Location = New Point(11, 127)
         Label27.Name = "Label27"
         Label27.Size = New Size(119, 23)
         Label27.TabIndex = 6
@@ -908,7 +943,7 @@ Partial Class Form1
         ' 
         ' inputpwr
         ' 
-        inputpwr.Location = New Point(133, 73)
+        inputpwr.Location = New Point(136, 73)
         inputpwr.Name = "inputpwr"
         inputpwr.Size = New Size(125, 27)
         inputpwr.TabIndex = 5
@@ -917,7 +952,7 @@ Partial Class Form1
         ' 
         Label26.AutoSize = True
         Label26.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label26.Location = New Point(21, 77)
+        Label26.Location = New Point(24, 76)
         Label26.Name = "Label26"
         Label26.Size = New Size(106, 23)
         Label26.TabIndex = 4
@@ -939,7 +974,7 @@ Partial Class Form1
         TabPage6.Controls.Add(Button21)
         TabPage6.Controls.Add(Button20)
         TabPage6.Controls.Add(Button19)
-        TabPage6.Controls.Add(dbws)
+        TabPage6.Controls.Add(dbms)
         TabPage6.Controls.Add(wattss)
         TabPage6.Controls.Add(Label39)
         TabPage6.Controls.Add(Label38)
@@ -949,7 +984,7 @@ Partial Class Form1
         TabPage6.Padding = New Padding(3)
         TabPage6.Size = New Size(908, 378)
         TabPage6.TabIndex = 5
-        TabPage6.Text = "Watts to dBW"
+        TabPage6.Text = "Watts to dBm"
         ' 
         ' Button21
         ' 
@@ -966,7 +1001,7 @@ Partial Class Form1
         Button20.Name = "Button20"
         Button20.Size = New Size(146, 64)
         Button20.TabIndex = 13
-        Button20.Text = "dBW to Watts"
+        Button20.Text = "dBm to Watts"
         Button20.UseVisualStyleBackColor = True
         ' 
         ' Button19
@@ -975,15 +1010,15 @@ Partial Class Form1
         Button19.Name = "Button19"
         Button19.Size = New Size(146, 64)
         Button19.TabIndex = 12
-        Button19.Text = "Watts to dBW"
+        Button19.Text = "Watts to dBm"
         Button19.UseVisualStyleBackColor = True
         ' 
-        ' dbws
+        ' dbms
         ' 
-        dbws.Location = New Point(550, 157)
-        dbws.Name = "dbws"
-        dbws.Size = New Size(152, 27)
-        dbws.TabIndex = 11
+        dbms.Location = New Point(550, 157)
+        dbms.Name = "dbms"
+        dbms.Size = New Size(152, 27)
+        dbms.TabIndex = 11
         ' 
         ' wattss
         ' 
@@ -998,9 +1033,9 @@ Partial Class Form1
         Label39.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label39.Location = New Point(486, 153)
         Label39.Name = "Label39"
-        Label39.Size = New Size(58, 28)
+        Label39.Size = New Size(56, 28)
         Label39.TabIndex = 9
-        Label39.Text = "dBW:"
+        Label39.Text = "dBm:"
         ' 
         ' Label38
         ' 
@@ -1019,9 +1054,9 @@ Partial Class Form1
         Label37.Location = New Point(324, 37)
         Label37.Name = "Label37"
         Label37.RightToLeft = RightToLeft.No
-        Label37.Size = New Size(220, 38)
+        Label37.Size = New Size(207, 38)
         Label37.TabIndex = 2
-        Label37.Text = "Watts <--> dBW"
+        Label37.Text = "Watts <-> dBm"
         ' 
         ' Label4
         ' 
@@ -1078,7 +1113,7 @@ Partial Class Form1
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form1"
-        Text = "MiDelgas RF Calculator Beta   02/06/23"
+        Text = "MiDelgas RF Calculator Beta   16/01/26"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         TabPage1.PerformLayout()
@@ -1138,7 +1173,7 @@ Partial Class Form1
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents losnmi As TextBox
+    Friend WithEvents losmi As TextBox
     Friend WithEvents loskm As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Button12 As Button
@@ -1146,7 +1181,7 @@ Partial Class Form1
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents Label22 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents nmicv As TextBox
+    Friend WithEvents micv As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents kmcv As TextBox
     Friend WithEvents Label19 As Label
@@ -1167,12 +1202,12 @@ Partial Class Form1
     Friend WithEvents Label36 As Label
     Friend WithEvents Label35 As Label
     Friend WithEvents Label34 As Label
-    Friend WithEvents eirpdbw As TextBox
+    Friend WithEvents eirpdbm As TextBox
     Friend WithEvents eirpw As TextBox
     Friend WithEvents Label33 As Label
     Friend WithEvents Button18 As Button
     Friend WithEvents Label32 As Label
-    Friend WithEvents erpdbw As TextBox
+    Friend WithEvents erpdbm As TextBox
     Friend WithEvents Label31 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents erpw As TextBox
@@ -1187,10 +1222,13 @@ Partial Class Form1
     Friend WithEvents Button21 As Button
     Friend WithEvents Button20 As Button
     Friend WithEvents Button19 As Button
-    Friend WithEvents dbws As TextBox
+    Friend WithEvents dbms As TextBox
     Friend WithEvents wattss As TextBox
     Friend WithEvents Label39 As Label
     Friend WithEvents Label38 As Label
     Friend WithEvents Label37 As Label
     Friend WithEvents Button22 As Button
+    Friend WithEvents Label40 As Label
+    Friend WithEvents cableloss As TextBox
+    Friend WithEvents Label41 As Label
 End Class
