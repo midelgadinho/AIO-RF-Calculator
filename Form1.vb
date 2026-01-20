@@ -1,4 +1,7 @@
-﻿Public Class Form1
+﻿Imports System.Reflection.Emit
+Imports System.Windows
+
+Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -173,4 +176,75 @@
         eirpdbm.Text = ""
     End Sub
 
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        pwrdbm.Text = ""
+        fields.Text = ""
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        Dim pdbm As Double
+        Dim syz As Double
+
+        pdbm = Convert.ToDouble(pwrdbm.Text)
+        syz = Convert.ToDouble(sysz.Text)
+
+
+        Dim fis As Double = (pdbm + 10 * Math.Log10(syz) + 90)
+
+        fields.Text = Convert.ToString(fis)
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        Dim syz As Double
+        Dim fis As Double
+
+        fis = Convert.ToDouble(fields.Text)
+        syz = Convert.ToDouble(sysz.Text)
+
+        Dim pdbm As Double = (fis - 10 * Math.Log10(syz) - 90)
+
+        pwrdbm.Text = Convert.ToString(pdbm)
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+    End Sub
+
+    Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+        Dim alphah As Double
+
+        alphah = Convert.ToDouble(TextBox4.Text)
+
+        Dim alpha As Double = (alphah / 100)
+
+        TextBox3.Text = Convert.ToString(alpha)
+    End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        Dim alpha As Double
+        Dim met As Double
+
+        alpha = Convert.ToDouble(TextBox3.Text)
+        met = Convert.ToDouble(TextBox2.Text)
+
+        Dim total As Double = (alpha * met)
+
+        TextBox1.Text = Convert.ToString(total)
+
+    End Sub
+
+    Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+        Dim total As Double
+        Dim met As Double
+
+        total = Convert.ToDouble(TextBox1.Text)
+        met = Convert.ToDouble(TextBox2.Text)
+
+        Dim alpha As Double = (total / met)
+
+        TextBox3.Text = Convert.ToString(alpha)
+    End Sub
 End Class
