@@ -37,17 +37,6 @@ Partial Class Form1
         FrequencyIn = New TextBox()
         Label2 = New Label()
         Label1 = New Label()
-        TabPage2 = New TabPage()
-        Label51 = New Label()
-        Button10 = New Button()
-        Button9 = New Button()
-        Button8 = New Button()
-        Button7 = New Button()
-        Button6 = New Button()
-        dbiIn = New TextBox()
-        dbdIn = New TextBox()
-        Label7 = New Label()
-        Label6 = New Label()
         TabPage3 = New TabPage()
         Label50 = New Label()
         Button13 = New Button()
@@ -85,6 +74,26 @@ Partial Class Form1
         Label16 = New Label()
         mcv = New TextBox()
         Label15 = New Label()
+        TabPage6 = New TabPage()
+        Button21 = New Button()
+        Button20 = New Button()
+        Button19 = New Button()
+        dbms = New TextBox()
+        wattss = New TextBox()
+        Label39 = New Label()
+        Label38 = New Label()
+        Label37 = New Label()
+        TabPage2 = New TabPage()
+        Label51 = New Label()
+        Button10 = New Button()
+        Button9 = New Button()
+        Button8 = New Button()
+        Button7 = New Button()
+        Button6 = New Button()
+        dbiIn = New TextBox()
+        dbdIn = New TextBox()
+        Label7 = New Label()
+        Label6 = New Label()
         TabPage5 = New TabPage()
         Label40 = New Label()
         cableloss = New TextBox()
@@ -110,15 +119,6 @@ Partial Class Form1
         inputpwr = New TextBox()
         Label26 = New Label()
         Label25 = New Label()
-        TabPage6 = New TabPage()
-        Button21 = New Button()
-        Button20 = New Button()
-        Button19 = New Button()
-        dbms = New TextBox()
-        wattss = New TextBox()
-        Label39 = New Label()
-        Label38 = New Label()
-        Label37 = New Label()
         TabPage7 = New TabPage()
         Label48 = New Label()
         Button25 = New Button()
@@ -151,6 +151,32 @@ Partial Class Form1
         TextBox3 = New TextBox()
         Label59 = New Label()
         Label53 = New Label()
+        TabPage9 = New TabPage()
+        Label76 = New Label()
+        Button32 = New Button()
+        Button33 = New Button()
+        Label69 = New Label()
+        TextBox8 = New TextBox()
+        Label70 = New Label()
+        Label71 = New Label()
+        TextBox9 = New TextBox()
+        Label72 = New Label()
+        Label73 = New Label()
+        TextBox10 = New TextBox()
+        Label74 = New Label()
+        Label75 = New Label()
+        Button31 = New Button()
+        Button30 = New Button()
+        Label63 = New Label()
+        TextBox5 = New TextBox()
+        Label64 = New Label()
+        Label65 = New Label()
+        TextBox6 = New TextBox()
+        Label66 = New Label()
+        Label67 = New Label()
+        TextBox7 = New TextBox()
+        Label68 = New Label()
+        Label62 = New Label()
         Label4 = New Label()
         Label5 = New Label()
         PictureBox2 = New PictureBox()
@@ -158,28 +184,30 @@ Partial Class Form1
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        TabPage2.SuspendLayout()
         TabPage3.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         TabPage4.SuspendLayout()
+        TabPage6.SuspendLayout()
+        TabPage2.SuspendLayout()
         TabPage5.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
-        TabPage6.SuspendLayout()
         TabPage7.SuspendLayout()
         TabPage8.SuspendLayout()
+        TabPage9.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TabControl1
         ' 
         TabControl1.Controls.Add(TabPage1)
-        TabControl1.Controls.Add(TabPage2)
         TabControl1.Controls.Add(TabPage3)
         TabControl1.Controls.Add(TabPage4)
-        TabControl1.Controls.Add(TabPage5)
         TabControl1.Controls.Add(TabPage6)
+        TabControl1.Controls.Add(TabPage2)
+        TabControl1.Controls.Add(TabPage5)
         TabControl1.Controls.Add(TabPage7)
         TabControl1.Controls.Add(TabPage8)
+        TabControl1.Controls.Add(TabPage9)
         TabControl1.Location = New Point(16, 97)
         TabControl1.Name = "TabControl1"
         TabControl1.SelectedIndex = 0
@@ -206,7 +234,7 @@ Partial Class Form1
         TabPage1.Padding = New Padding(3)
         TabPage1.Size = New Size(908, 378)
         TabPage1.TabIndex = 0
-        TabPage1.Text = "Frequency/Wavelenght"
+        TabPage1.Text = "Frequency/Wavelength"
         ' 
         ' Label52
         ' 
@@ -216,7 +244,7 @@ Partial Class Form1
         Label52.Name = "Label52"
         Label52.Size = New Size(371, 28)
         Label52.TabIndex = 25
-        Label52.Text = "Frequency and Wavelenght Calculator"
+        Label52.Text = "Frequency and Wavelength Calculator"
         ' 
         ' Label3
         ' 
@@ -253,7 +281,7 @@ Partial Class Form1
         Button4.Name = "Button4"
         Button4.Size = New Size(140, 30)
         Button4.TabIndex = 7
-        Button4.Text = "Clear Wavelenght"
+        Button4.Text = "Clear Wavelength"
         Button4.UseVisualStyleBackColor = True
         ' 
         ' Button3
@@ -271,7 +299,7 @@ Partial Class Form1
         Button2.Name = "Button2"
         Button2.Size = New Size(140, 57)
         Button2.TabIndex = 5
-        Button2.Text = "Calculate Wavelenght"
+        Button2.Text = "Calculate Wavelength"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' Button1
@@ -316,115 +344,6 @@ Partial Class Form1
         Label1.Size = New Size(142, 23)
         Label1.TabIndex = 0
         Label1.Text = "Frequency (MHz):"
-        ' 
-        ' TabPage2
-        ' 
-        TabPage2.BackColor = SystemColors.ControlLight
-        TabPage2.Controls.Add(Label51)
-        TabPage2.Controls.Add(Button10)
-        TabPage2.Controls.Add(Button9)
-        TabPage2.Controls.Add(Button8)
-        TabPage2.Controls.Add(Button7)
-        TabPage2.Controls.Add(Button6)
-        TabPage2.Controls.Add(dbiIn)
-        TabPage2.Controls.Add(dbdIn)
-        TabPage2.Controls.Add(Label7)
-        TabPage2.Controls.Add(Label6)
-        TabPage2.Location = New Point(4, 29)
-        TabPage2.Name = "TabPage2"
-        TabPage2.Padding = New Padding(3)
-        TabPage2.Size = New Size(908, 378)
-        TabPage2.TabIndex = 1
-        TabPage2.Text = "dBd-dBi Converter"
-        ' 
-        ' Label51
-        ' 
-        Label51.AutoSize = True
-        Label51.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label51.Location = New Point(15, 17)
-        Label51.Name = "Label51"
-        Label51.Size = New Size(195, 28)
-        Label51.TabIndex = 25
-        Label51.Text = "Isotropic Converter"
-        ' 
-        ' Button10
-        ' 
-        Button10.Location = New Point(450, 157)
-        Button10.Name = "Button10"
-        Button10.Size = New Size(142, 32)
-        Button10.TabIndex = 9
-        Button10.Text = "Clear dBi value"
-        Button10.UseVisualStyleBackColor = True
-        ' 
-        ' Button9
-        ' 
-        Button9.Location = New Point(450, 99)
-        Button9.Name = "Button9"
-        Button9.Size = New Size(142, 32)
-        Button9.TabIndex = 8
-        Button9.Text = "Clear dBd value"
-        Button9.UseVisualStyleBackColor = True
-        ' 
-        ' Button8
-        ' 
-        Button8.Location = New Point(518, 270)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(130, 62)
-        Button8.TabIndex = 7
-        Button8.Text = "Clear All"
-        Button8.UseVisualStyleBackColor = True
-        ' 
-        ' Button7
-        ' 
-        Button7.Location = New Point(344, 270)
-        Button7.Name = "Button7"
-        Button7.Size = New Size(130, 62)
-        Button7.TabIndex = 6
-        Button7.Text = "Calculate dBd"
-        Button7.UseVisualStyleBackColor = True
-        ' 
-        ' Button6
-        ' 
-        Button6.Location = New Point(166, 270)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(130, 62)
-        Button6.TabIndex = 5
-        Button6.Text = "Calculate dBi"
-        Button6.UseVisualStyleBackColor = True
-        ' 
-        ' dbiIn
-        ' 
-        dbiIn.Location = New Point(263, 160)
-        dbiIn.Name = "dbiIn"
-        dbiIn.Size = New Size(150, 27)
-        dbiIn.TabIndex = 4
-        ' 
-        ' dbdIn
-        ' 
-        dbdIn.Location = New Point(263, 102)
-        dbdIn.Name = "dbdIn"
-        dbdIn.Size = New Size(150, 27)
-        dbdIn.TabIndex = 3
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label7.Location = New Point(166, 161)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(85, 23)
-        Label7.TabIndex = 2
-        Label7.Text = "Value dBi:"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.Location = New Point(166, 106)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(91, 23)
-        Label6.TabIndex = 1
-        Label6.Text = "Value dBd:"
         ' 
         ' TabPage3
         ' 
@@ -799,6 +718,205 @@ Partial Class Form1
         Label15.TabIndex = 2
         Label15.Text = "Meters <-> Feet"
         ' 
+        ' TabPage6
+        ' 
+        TabPage6.BackColor = SystemColors.ControlLight
+        TabPage6.Controls.Add(Button21)
+        TabPage6.Controls.Add(Button20)
+        TabPage6.Controls.Add(Button19)
+        TabPage6.Controls.Add(dbms)
+        TabPage6.Controls.Add(wattss)
+        TabPage6.Controls.Add(Label39)
+        TabPage6.Controls.Add(Label38)
+        TabPage6.Controls.Add(Label37)
+        TabPage6.Location = New Point(4, 29)
+        TabPage6.Name = "TabPage6"
+        TabPage6.Padding = New Padding(3)
+        TabPage6.Size = New Size(908, 378)
+        TabPage6.TabIndex = 5
+        TabPage6.Text = "Watts to dBm"
+        ' 
+        ' Button21
+        ' 
+        Button21.Location = New Point(382, 238)
+        Button21.Name = "Button21"
+        Button21.Size = New Size(146, 64)
+        Button21.TabIndex = 14
+        Button21.Text = "Clear All"
+        Button21.UseVisualStyleBackColor = True
+        ' 
+        ' Button20
+        ' 
+        Button20.Location = New Point(556, 238)
+        Button20.Name = "Button20"
+        Button20.Size = New Size(146, 64)
+        Button20.TabIndex = 13
+        Button20.Text = "dBm to Watts"
+        Button20.UseVisualStyleBackColor = True
+        ' 
+        ' Button19
+        ' 
+        Button19.Location = New Point(211, 238)
+        Button19.Name = "Button19"
+        Button19.Size = New Size(146, 64)
+        Button19.TabIndex = 12
+        Button19.Text = "Watts to dBm"
+        Button19.UseVisualStyleBackColor = True
+        ' 
+        ' dbms
+        ' 
+        dbms.Location = New Point(550, 157)
+        dbms.Name = "dbms"
+        dbms.Size = New Size(152, 27)
+        dbms.TabIndex = 11
+        ' 
+        ' wattss
+        ' 
+        wattss.Location = New Point(211, 157)
+        wattss.Name = "wattss"
+        wattss.Size = New Size(152, 27)
+        wattss.TabIndex = 10
+        ' 
+        ' Label39
+        ' 
+        Label39.AutoSize = True
+        Label39.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label39.Location = New Point(486, 153)
+        Label39.Name = "Label39"
+        Label39.Size = New Size(56, 28)
+        Label39.TabIndex = 9
+        Label39.Text = "dBm:"
+        ' 
+        ' Label38
+        ' 
+        Label38.AutoSize = True
+        Label38.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label38.Location = New Point(139, 157)
+        Label38.Name = "Label38"
+        Label38.Size = New Size(66, 28)
+        Label38.TabIndex = 8
+        Label38.Text = "Watts:"
+        ' 
+        ' Label37
+        ' 
+        Label37.AutoSize = True
+        Label37.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label37.Location = New Point(6, 16)
+        Label37.Name = "Label37"
+        Label37.RightToLeft = RightToLeft.No
+        Label37.Size = New Size(258, 28)
+        Label37.TabIndex = 2
+        Label37.Text = "Watts <-> dBm Converter"
+        ' 
+        ' TabPage2
+        ' 
+        TabPage2.BackColor = SystemColors.ControlLight
+        TabPage2.Controls.Add(Label51)
+        TabPage2.Controls.Add(Button10)
+        TabPage2.Controls.Add(Button9)
+        TabPage2.Controls.Add(Button8)
+        TabPage2.Controls.Add(Button7)
+        TabPage2.Controls.Add(Button6)
+        TabPage2.Controls.Add(dbiIn)
+        TabPage2.Controls.Add(dbdIn)
+        TabPage2.Controls.Add(Label7)
+        TabPage2.Controls.Add(Label6)
+        TabPage2.Location = New Point(4, 29)
+        TabPage2.Name = "TabPage2"
+        TabPage2.Padding = New Padding(3)
+        TabPage2.Size = New Size(908, 378)
+        TabPage2.TabIndex = 1
+        TabPage2.Text = "dBd-dBi Converter"
+        ' 
+        ' Label51
+        ' 
+        Label51.AutoSize = True
+        Label51.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label51.Location = New Point(17, 14)
+        Label51.Name = "Label51"
+        Label51.Size = New Size(195, 28)
+        Label51.TabIndex = 25
+        Label51.Text = "Isotropic Converter"
+        ' 
+        ' Button10
+        ' 
+        Button10.Location = New Point(450, 157)
+        Button10.Name = "Button10"
+        Button10.Size = New Size(142, 32)
+        Button10.TabIndex = 9
+        Button10.Text = "Clear dBi value"
+        Button10.UseVisualStyleBackColor = True
+        ' 
+        ' Button9
+        ' 
+        Button9.Location = New Point(450, 99)
+        Button9.Name = "Button9"
+        Button9.Size = New Size(142, 32)
+        Button9.TabIndex = 8
+        Button9.Text = "Clear dBd value"
+        Button9.UseVisualStyleBackColor = True
+        ' 
+        ' Button8
+        ' 
+        Button8.Location = New Point(518, 270)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(130, 62)
+        Button8.TabIndex = 7
+        Button8.Text = "Clear All"
+        Button8.UseVisualStyleBackColor = True
+        ' 
+        ' Button7
+        ' 
+        Button7.Location = New Point(344, 270)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(130, 62)
+        Button7.TabIndex = 6
+        Button7.Text = "Calculate dBd"
+        Button7.UseVisualStyleBackColor = True
+        ' 
+        ' Button6
+        ' 
+        Button6.Location = New Point(166, 270)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(130, 62)
+        Button6.TabIndex = 5
+        Button6.Text = "Calculate dBi"
+        Button6.UseVisualStyleBackColor = True
+        ' 
+        ' dbiIn
+        ' 
+        dbiIn.Location = New Point(263, 160)
+        dbiIn.Name = "dbiIn"
+        dbiIn.Size = New Size(150, 27)
+        dbiIn.TabIndex = 4
+        ' 
+        ' dbdIn
+        ' 
+        dbdIn.Location = New Point(263, 102)
+        dbdIn.Name = "dbdIn"
+        dbdIn.Size = New Size(150, 27)
+        dbdIn.TabIndex = 3
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.Location = New Point(166, 161)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(85, 23)
+        Label7.TabIndex = 2
+        Label7.Text = "Value dBi:"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.Location = New Point(166, 106)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(91, 23)
+        Label6.TabIndex = 1
+        Label6.Text = "Value dBd:"
+        ' 
         ' TabPage5
         ' 
         TabPage5.BackColor = SystemColors.ControlLight
@@ -1046,101 +1164,11 @@ Partial Class Form1
         ' 
         Label25.AutoSize = True
         Label25.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label25.Location = New Point(24, 18)
+        Label25.Location = New Point(11, 14)
         Label25.Name = "Label25"
         Label25.Size = New Size(239, 56)
         Label25.TabIndex = 2
         Label25.Text = "ERP and EIRP Calculator" & vbCrLf & vbCrLf
-        ' 
-        ' TabPage6
-        ' 
-        TabPage6.BackColor = SystemColors.ControlLight
-        TabPage6.Controls.Add(Button21)
-        TabPage6.Controls.Add(Button20)
-        TabPage6.Controls.Add(Button19)
-        TabPage6.Controls.Add(dbms)
-        TabPage6.Controls.Add(wattss)
-        TabPage6.Controls.Add(Label39)
-        TabPage6.Controls.Add(Label38)
-        TabPage6.Controls.Add(Label37)
-        TabPage6.Location = New Point(4, 29)
-        TabPage6.Name = "TabPage6"
-        TabPage6.Padding = New Padding(3)
-        TabPage6.Size = New Size(908, 378)
-        TabPage6.TabIndex = 5
-        TabPage6.Text = "Watts to dBm"
-        ' 
-        ' Button21
-        ' 
-        Button21.Location = New Point(382, 238)
-        Button21.Name = "Button21"
-        Button21.Size = New Size(146, 64)
-        Button21.TabIndex = 14
-        Button21.Text = "Clear All"
-        Button21.UseVisualStyleBackColor = True
-        ' 
-        ' Button20
-        ' 
-        Button20.Location = New Point(556, 238)
-        Button20.Name = "Button20"
-        Button20.Size = New Size(146, 64)
-        Button20.TabIndex = 13
-        Button20.Text = "dBm to Watts"
-        Button20.UseVisualStyleBackColor = True
-        ' 
-        ' Button19
-        ' 
-        Button19.Location = New Point(211, 238)
-        Button19.Name = "Button19"
-        Button19.Size = New Size(146, 64)
-        Button19.TabIndex = 12
-        Button19.Text = "Watts to dBm"
-        Button19.UseVisualStyleBackColor = True
-        ' 
-        ' dbms
-        ' 
-        dbms.Location = New Point(550, 157)
-        dbms.Name = "dbms"
-        dbms.Size = New Size(152, 27)
-        dbms.TabIndex = 11
-        ' 
-        ' wattss
-        ' 
-        wattss.Location = New Point(211, 157)
-        wattss.Name = "wattss"
-        wattss.Size = New Size(152, 27)
-        wattss.TabIndex = 10
-        ' 
-        ' Label39
-        ' 
-        Label39.AutoSize = True
-        Label39.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label39.Location = New Point(486, 153)
-        Label39.Name = "Label39"
-        Label39.Size = New Size(56, 28)
-        Label39.TabIndex = 9
-        Label39.Text = "dBm:"
-        ' 
-        ' Label38
-        ' 
-        Label38.AutoSize = True
-        Label38.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label38.Location = New Point(139, 157)
-        Label38.Name = "Label38"
-        Label38.Size = New Size(66, 28)
-        Label38.TabIndex = 8
-        Label38.Text = "Watts:"
-        ' 
-        ' Label37
-        ' 
-        Label37.AutoSize = True
-        Label37.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label37.Location = New Point(16, 19)
-        Label37.Name = "Label37"
-        Label37.RightToLeft = RightToLeft.No
-        Label37.Size = New Size(258, 28)
-        Label37.TabIndex = 2
-        Label37.Text = "Watts <-> dBm Converter"
         ' 
         ' TabPage7
         ' 
@@ -1169,7 +1197,7 @@ Partial Class Form1
         ' 
         Label48.AutoSize = True
         Label48.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label48.Location = New Point(30, 19)
+        Label48.Location = New Point(10, 14)
         Label48.Name = "Label48"
         Label48.Size = New Size(247, 28)
         Label48.TabIndex = 21
@@ -1459,11 +1487,274 @@ Partial Class Form1
         ' 
         Label53.AutoSize = True
         Label53.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label53.Location = New Point(10, 20)
+        Label53.Location = New Point(6, 13)
         Label53.Name = "Label53"
         Label53.Size = New Size(212, 28)
         Label53.TabIndex = 22
         Label53.Text = "Cable Loss Calculator"
+        ' 
+        ' TabPage9
+        ' 
+        TabPage9.BackColor = SystemColors.ControlLight
+        TabPage9.Controls.Add(Label76)
+        TabPage9.Controls.Add(Button32)
+        TabPage9.Controls.Add(Button33)
+        TabPage9.Controls.Add(Label69)
+        TabPage9.Controls.Add(TextBox8)
+        TabPage9.Controls.Add(Label70)
+        TabPage9.Controls.Add(Label71)
+        TabPage9.Controls.Add(TextBox9)
+        TabPage9.Controls.Add(Label72)
+        TabPage9.Controls.Add(Label73)
+        TabPage9.Controls.Add(TextBox10)
+        TabPage9.Controls.Add(Label74)
+        TabPage9.Controls.Add(Label75)
+        TabPage9.Controls.Add(Button31)
+        TabPage9.Controls.Add(Button30)
+        TabPage9.Controls.Add(Label63)
+        TabPage9.Controls.Add(TextBox5)
+        TabPage9.Controls.Add(Label64)
+        TabPage9.Controls.Add(Label65)
+        TabPage9.Controls.Add(TextBox6)
+        TabPage9.Controls.Add(Label66)
+        TabPage9.Controls.Add(Label67)
+        TabPage9.Controls.Add(TextBox7)
+        TabPage9.Controls.Add(Label68)
+        TabPage9.Controls.Add(Label62)
+        TabPage9.Location = New Point(4, 29)
+        TabPage9.Name = "TabPage9"
+        TabPage9.Padding = New Padding(3)
+        TabPage9.Size = New Size(908, 378)
+        TabPage9.TabIndex = 8
+        TabPage9.Text = "FSPL/Rx Power"
+        ' 
+        ' Label76
+        ' 
+        Label76.AutoSize = True
+        Label76.Location = New Point(343, 314)
+        Label76.Name = "Label76"
+        Label76.Size = New Size(229, 40)
+        Label76.TabIndex = 56
+        Label76.Text = "Regular half-wave dipole - 0 dBd" & vbCrLf & "Double-stacked dipole - 3 dBd"
+        ' 
+        ' Button32
+        ' 
+        Button32.Location = New Point(760, 303)
+        Button32.Name = "Button32"
+        Button32.Size = New Size(119, 51)
+        Button32.TabIndex = 55
+        Button32.Text = "Clear All"
+        Button32.UseVisualStyleBackColor = True
+        ' 
+        ' Button33
+        ' 
+        Button33.Location = New Point(618, 303)
+        Button33.Name = "Button33"
+        Button33.Size = New Size(119, 51)
+        Button33.TabIndex = 54
+        Button33.Text = "Received Power"
+        Button33.UseVisualStyleBackColor = True
+        ' 
+        ' Label69
+        ' 
+        Label69.AutoSize = True
+        Label69.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label69.Location = New Point(834, 239)
+        Label69.Name = "Label69"
+        Label69.Size = New Size(45, 23)
+        Label69.TabIndex = 53
+        Label69.Text = "dBm"
+        ' 
+        ' TextBox8
+        ' 
+        TextBox8.Location = New Point(703, 238)
+        TextBox8.Name = "TextBox8"
+        TextBox8.Size = New Size(125, 27)
+        TextBox8.TabIndex = 52
+        ' 
+        ' Label70
+        ' 
+        Label70.AutoSize = True
+        Label70.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label70.Location = New Point(565, 239)
+        Label70.Name = "Label70"
+        Label70.Size = New Size(132, 23)
+        Label70.TabIndex = 51
+        Label70.Text = "Received Power:"
+        ' 
+        ' Label71
+        ' 
+        Label71.AutoSize = True
+        Label71.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label71.Location = New Point(834, 144)
+        Label71.Name = "Label71"
+        Label71.Size = New Size(40, 23)
+        Label71.TabIndex = 50
+        Label71.Text = "dBd"
+        ' 
+        ' TextBox9
+        ' 
+        TextBox9.Location = New Point(703, 143)
+        TextBox9.Name = "TextBox9"
+        TextBox9.Size = New Size(125, 27)
+        TextBox9.TabIndex = 49
+        TextBox9.Text = "0"
+        ' 
+        ' Label72
+        ' 
+        Label72.AutoSize = True
+        Label72.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label72.Location = New Point(551, 143)
+        Label72.Name = "Label72"
+        Label72.Size = New Size(146, 23)
+        Label72.TabIndex = 48
+        Label72.Text = "Rx. Antenna Gain:"
+        ' 
+        ' Label73
+        ' 
+        Label73.AutoSize = True
+        Label73.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label73.Location = New Point(834, 91)
+        Label73.Name = "Label73"
+        Label73.Size = New Size(45, 23)
+        Label73.TabIndex = 47
+        Label73.Text = "dBm"
+        ' 
+        ' TextBox10
+        ' 
+        TextBox10.Location = New Point(703, 90)
+        TextBox10.Name = "TextBox10"
+        TextBox10.Size = New Size(125, 27)
+        TextBox10.TabIndex = 46
+        ' 
+        ' Label74
+        ' 
+        Label74.AutoSize = True
+        Label74.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label74.Location = New Point(563, 90)
+        Label74.Name = "Label74"
+        Label74.Size = New Size(134, 23)
+        Label74.TabIndex = 45
+        Label74.Text = "Transmitter ERP:"
+        ' 
+        ' Label75
+        ' 
+        Label75.AutoSize = True
+        Label75.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label75.Location = New Point(551, 13)
+        Label75.Name = "Label75"
+        Label75.Size = New Size(263, 28)
+        Label75.TabIndex = 44
+        Label75.Text = "Received Power Calculator"
+        ' 
+        ' Button31
+        ' 
+        Button31.Location = New Point(169, 303)
+        Button31.Name = "Button31"
+        Button31.Size = New Size(119, 51)
+        Button31.TabIndex = 43
+        Button31.Text = "Clear All"
+        Button31.UseVisualStyleBackColor = True
+        ' 
+        ' Button30
+        ' 
+        Button30.Location = New Point(27, 303)
+        Button30.Name = "Button30"
+        Button30.Size = New Size(119, 51)
+        Button30.TabIndex = 42
+        Button30.Text = "Free Space Loss"
+        Button30.UseVisualStyleBackColor = True
+        ' 
+        ' Label63
+        ' 
+        Label63.AutoSize = True
+        Label63.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label63.Location = New Point(243, 239)
+        Label63.Name = "Label63"
+        Label63.Size = New Size(30, 23)
+        Label63.TabIndex = 41
+        Label63.Text = "dB"
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.Location = New Point(112, 238)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(125, 27)
+        TextBox5.TabIndex = 40
+        ' 
+        ' Label64
+        ' 
+        Label64.AutoSize = True
+        Label64.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label64.Location = New Point(67, 242)
+        Label64.Name = "Label64"
+        Label64.Size = New Size(39, 23)
+        Label64.TabIndex = 39
+        Label64.Text = "FSL:"
+        ' 
+        ' Label65
+        ' 
+        Label65.AutoSize = True
+        Label65.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label65.Location = New Point(243, 144)
+        Label65.Name = "Label65"
+        Label65.Size = New Size(45, 23)
+        Label65.TabIndex = 38
+        Label65.Text = "MHz"
+        ' 
+        ' TextBox6
+        ' 
+        TextBox6.Location = New Point(112, 143)
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(125, 27)
+        TextBox6.TabIndex = 37
+        ' 
+        ' Label66
+        ' 
+        Label66.AutoSize = True
+        Label66.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label66.Location = New Point(14, 147)
+        Label66.Name = "Label66"
+        Label66.Size = New Size(92, 23)
+        Label66.TabIndex = 36
+        Label66.Text = "Frequency:"
+        ' 
+        ' Label67
+        ' 
+        Label67.AutoSize = True
+        Label67.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label67.Location = New Point(243, 91)
+        Label67.Name = "Label67"
+        Label67.Size = New Size(33, 23)
+        Label67.TabIndex = 35
+        Label67.Text = "km"
+        ' 
+        ' TextBox7
+        ' 
+        TextBox7.Location = New Point(112, 90)
+        TextBox7.Name = "TextBox7"
+        TextBox7.Size = New Size(125, 27)
+        TextBox7.TabIndex = 34
+        ' 
+        ' Label68
+        ' 
+        Label68.AutoSize = True
+        Label68.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label68.Location = New Point(27, 90)
+        Label68.Name = "Label68"
+        Label68.Size = New Size(79, 23)
+        Label68.TabIndex = 33
+        Label68.Text = "Distance:"
+        ' 
+        ' Label62
+        ' 
+        Label62.AutoSize = True
+        Label62.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label62.Location = New Point(6, 13)
+        Label62.Name = "Label62"
+        Label62.Size = New Size(261, 28)
+        Label62.TabIndex = 23
+        Label62.Text = "Free Space Loss Calculator"
         ' 
         ' Label4
         ' 
@@ -1498,12 +1789,12 @@ Partial Class Form1
         ' LinkLabel1
         ' 
         LinkLabel1.AutoSize = True
-        LinkLabel1.Location = New Point(754, 511)
+        LinkLabel1.Location = New Point(716, 511)
         LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(171, 20)
+        LinkLabel1.Size = New Size(212, 20)
         LinkLabel1.TabIndex = 4
         LinkLabel1.TabStop = True
-        LinkLabel1.Text = "http://midelgas.ddns.net"
+        LinkLabel1.Text = "http://midelgas.ddns.net:8080/"
         ' 
         ' Form1
         ' 
@@ -1520,27 +1811,29 @@ Partial Class Form1
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form1"
-        Text = "MiDelgas RF Calculator Beta   20/01/26"
+        Text = "MiDelgas RF Calculator Beta 0.2.2"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         TabPage1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        TabPage2.ResumeLayout(False)
-        TabPage2.PerformLayout()
         TabPage3.ResumeLayout(False)
         TabPage3.PerformLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         TabPage4.ResumeLayout(False)
         TabPage4.PerformLayout()
+        TabPage6.ResumeLayout(False)
+        TabPage6.PerformLayout()
+        TabPage2.ResumeLayout(False)
+        TabPage2.PerformLayout()
         TabPage5.ResumeLayout(False)
         TabPage5.PerformLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
-        TabPage6.ResumeLayout(False)
-        TabPage6.PerformLayout()
         TabPage7.ResumeLayout(False)
         TabPage7.PerformLayout()
         TabPage8.ResumeLayout(False)
         TabPage8.PerformLayout()
+        TabPage9.ResumeLayout(False)
+        TabPage9.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -1678,4 +1971,30 @@ Partial Class Form1
     Friend WithEvents Label60 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label61 As Label
+    Friend WithEvents TabPage9 As TabPage
+    Friend WithEvents Label62 As Label
+    Friend WithEvents Button31 As Button
+    Friend WithEvents Button30 As Button
+    Friend WithEvents Label63 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label64 As Label
+    Friend WithEvents Label65 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label66 As Label
+    Friend WithEvents Label67 As Label
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Label68 As Label
+    Friend WithEvents Button32 As Button
+    Friend WithEvents Button33 As Button
+    Friend WithEvents Label69 As Label
+    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents Label70 As Label
+    Friend WithEvents Label71 As Label
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Label72 As Label
+    Friend WithEvents Label73 As Label
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label74 As Label
+    Friend WithEvents Label75 As Label
+    Friend WithEvents Label76 As Label
 End Class

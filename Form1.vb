@@ -247,4 +247,43 @@ Public Class Form1
 
         TextBox3.Text = Convert.ToString(alpha)
     End Sub
+
+    Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
+        Dim dis As Double
+        Dim freq As Double
+
+        dis = Convert.ToDouble(TextBox7.Text)
+        freq = Convert.ToDouble(TextBox6.Text)
+
+        Dim fsl As Double = (92.442 + 20 * Math.Log10(dis) + 20 * Math.Log10(freq / 1000))
+
+        TextBox5.Text = Convert.ToString(fsl)
+    End Sub
+
+    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+    End Sub
+
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        TextBox8.Text = ""
+        TextBox9.Text = ""
+        TextBox10.Text = ""
+    End Sub
+
+    Private Sub Button33_Click(sender As Object, e As EventArgs) Handles Button33.Click
+        Dim erp As Double
+        Dim gt As Double
+        Dim fsl As Double
+
+        erp = Convert.ToDouble(TextBox10.Text)
+        gt = Convert.ToDouble(TextBox9.Text)
+        fsl = Convert.ToDouble(TextBox5.Text)
+
+        Dim prx As Double = (erp + gt - fsl)
+
+        TextBox8.Text = Convert.ToString(prx)
+
+    End Sub
 End Class
