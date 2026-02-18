@@ -13,5 +13,6 @@ At the moment, this are the available calculators:
 - Field Strength Calculator
 - Cable Loss Calculator
 - Free Space Path Loss and Received Power Calculator
+- SNR Calculator
 
 If you have any issues while using this software, feel free to open an issue.
